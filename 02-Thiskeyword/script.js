@@ -26,3 +26,10 @@ const student = {
 }
 
 document.getElementById("demo").innerHTML = student.getInfo();
+
+const sub = ()=>{
+    console.log(this);
+}
+
+document.getElementById("demo").innerHTML = sub();
+
