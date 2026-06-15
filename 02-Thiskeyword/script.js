@@ -15,3 +15,14 @@ const person = {
 }
 
 document.getElementById("demo").innerHTML = person.getInfo();
+
+// this keyword in a arrow function
+const student = {
+    firstName:"Ishu",
+    lastName:"gupta",
+    getInfo: ()=>{
+        return this;
+    }
+}
+
+document.getElementById("demo").innerHTML = student.getInfo();
