@@ -4,3 +4,14 @@ function greet(){
 }
 
 document.getElementById("demo").innerHTML = greet();
+
+const person = {
+    firstName: "Vanshika",
+    age: 25,
+    // this keyword in a regular function inside an object - this will refer the object that owns the method
+    getInfo: function (){
+        return this;
+    }
+}
+
+document.getElementById("demo").innerHTML = person.getInfo();
